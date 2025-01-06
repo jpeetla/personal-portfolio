@@ -2,7 +2,6 @@ import memojiImage from "@/assets/images/memoji-computer.png";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
-import StarIcon from "@/assets/icons/star.svg";
 
 export const HeroSection = () => {
   return (
@@ -44,14 +43,20 @@ export const HeroSection = () => {
           </p>
 
           <div className="flex flex-col items-center mt-8 gap-4">
-            <button className="inline-flex gap-2 items-center border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+            <a
+              href="#about"
+              className="inline-flex gap-2 items-center border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-30"
+            >
               <span>👋🏻</span>
               <span className="font-semibold">About me!</span>
-            </button>
-            <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+            </a>
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-30"
+            >
               <span className="font-semibold">Explore my work</span>
               <ArrowDown className="size-4" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

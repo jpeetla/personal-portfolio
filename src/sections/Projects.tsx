@@ -48,9 +48,9 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="pb-16">
+    <section id="projects" className="pb-16 py-10">
       <div>
-        <h2 className="font-serif text-3xl text-center mt-6">
+        <h2 className="font-serif text-5xl text-center mt-20">
           Featured Projects
         </h2>
         <div className="mt-10 flex flex-col gap-20 mx-10">
@@ -72,7 +72,10 @@ export const ProjectsSection = () => {
                 <ul className="flex flex-col gap-4 mt-4">
                   {project.results.map((result) => {
                     return (
-                      <li className="flex gap-2 text-sm text-white/50">
+                      <li
+                        key={result.title}
+                        className="flex gap-2 text-sm text-white/50"
+                      >
                         <CheckCircleIcon className="size-5" />
                         <span>{result.title}</span>;
                       </li>
@@ -85,7 +88,6 @@ export const ProjectsSection = () => {
                     <ArrowUpRight className="size-4" />
                   </button>
                 </a>
-                {/* <Image src={project.image} alt={project.title} /> */}
               </div>
             );
           })}
