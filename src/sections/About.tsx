@@ -1,4 +1,5 @@
 import headshot from "@/assets/images/headshot2.jpg";
+import Image from "next/image";
 
 export const AboutSection = () => {
   return (
@@ -16,12 +17,12 @@ export const AboutSection = () => {
         <p>
           My name is Jayanth Peetla, a fourth-year Computer Science student at
           the University of Virginia. I'm passionate about building software to
-          tackle challenging real-world problems. I'm an experienced full-stack
-          developer using a variety of different tech stacks.
+          tackle challenging real-world problems. I&apos;m an experienced
+          full-stack developer using a variety of different tech stacks.
         </p>
       </div>
       <div>
-        <img
+        <Image
           src={headshot.src}
           alt="Jayanth Peetla"
           className="rounded-3xl h-80 w-70"
