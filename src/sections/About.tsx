@@ -16,9 +16,10 @@ export const AboutSection = () => {
         <h2 className="font-serif text-5xl">About Me</h2>
         <p>
           My name is Jayanth Peetla, a fourth-year Computer Science student at
-          the University of Virginia. I'm passionate about building software to
-          tackle challenging real-world problems. I&apos;m an experienced
-          full-stack developer using a variety of different tech stacks.
+          the University of Virginia. I&apos;m passionate about building
+          software to tackle challenging real-world problems. I&apos;m an
+          experienced full-stack developer using a variety of different tech
+          stacks.
         </p>
       </div>
       <div>
